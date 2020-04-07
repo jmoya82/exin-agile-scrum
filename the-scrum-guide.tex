@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+%\graphicspath{ {./png/} }
+\usepackage{float}
+\floatplacement{figure}{H}
+\floatplacement{table}{H}
+\usepackage{hyperref}
+\usepackage[toc,page]{appendix}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=blue,
+    citecolor=blue
+}
+\setkeys{Gin}{width=\linewidth}
+\usepackage[nottoc]{tocbibind}
+\usepackage[a4paper,margin=3.5cm]{geometry}
+\usepackage[hashEnumerators,smartEllipses,inlineFootnotes,hybrid,footnotes,definitionLists,pipeTables,tableCaptions]{markdown}
+
+\title{The Scrum Guide}
+\author{Javier Moya}
+\date{April 2020}
+
+\begin{document}
+
+\maketitle
+
+\renewcommand{\abstractname}{Summary}
+\begin{abstract}
+ \markdownInput{the-scrum-guide/purpose-of-the-scrum-guide.md}
+\end{abstract}
+
+\tableofcontents
+
+%\section*{Preface}
+%\addcontentsline{toc}{section}{Preface}
+%This is a preface.
+
+%\section{Introduction}
+
+%This is an example project that shows how we could use Overleaf for documenting our GRAPIN Cloud Project. Please notice that the file latex-1 is PULLED from another repository.
+
+\markdownInput{the-scrum-guide/scrum-theory.md}
+
+%\appendix
+%\markdownInput{appendix.md}
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+\listoffigures
+\listoftables
+
+\end{document}
